@@ -1,0 +1,191 @@
+ [
+    {
+        "name": "root",
+        "parent": null,
+        "children": [
+            "compressed_script",
+            "encryption",
+            "transaction_control",
+            "table_type",
+            "logging",
+            "no_write_delay",
+            "small_log"
+        ],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": false
+    },
+    {
+        "name": "compressed_script",
+        "parent": "root",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": true
+    },
+    {
+        "name": "encryption",
+        "parent": "root",
+        "children": [
+            "crypt_aes",
+            "crypt_blowfish"
+        ],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": true
+    },
+    {
+        "name": "crypt_aes",
+        "parent": "encryption",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "crypt_blowfish"
+        ],
+        "isOptional": false
+    },
+    {
+        "name": "crypt_blowfish",
+        "parent": "encryption",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "crypt_aes"
+        ],
+        "isOptional": false
+    },
+    {
+        "name": "transaction_control",
+        "parent": "root",
+        "children": [
+            "txc_mvlocks",
+            "txc_mvcc",
+            "txc_locks"
+        ],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": false
+    },
+    {
+        "name": "txc_mvlocks",
+        "parent": "transaction_control",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "txc_locks",
+            "txc_mvcc"
+        ],
+        "isOptional": false
+    },
+    {
+        "name": "txc_mvcc",
+        "parent": "transaction_control",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "txc_locks",
+            "txc_mvlocks"
+        ],
+        "isOptional": false
+    },
+    {
+        "name": "txc_locks",
+        "parent": "transaction_control",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "txc_mvcc",
+            "txc_mvlocks"
+        ],
+        "isOptional": false
+    },
+    {
+        "name": "table_type",
+        "parent": "root",
+        "children": [
+            "memory_tables",
+            "cached_tables"
+        ],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": false
+    },
+    {
+        "name": "memory_tables",
+        "parent": "table_type",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "cached_tables"
+        ],
+        "isOptional": false
+    },
+    {
+        "name": "cached_tables",
+        "parent": "table_type",
+        "children": [
+            "small_cache",
+            "large_cache"
+        ],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "memory_tables"
+        ],
+        "isOptional": false
+    },
+    {
+        "name": "small_cache",
+        "parent": "cached_tables",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "large_cache"
+        ],
+        "isOptional": true
+    },
+    {
+        "name": "large_cache",
+        "parent": "cached_tables",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [
+            "small_cache"
+        ],
+        "isOptional": true
+    },
+    {
+        "name": "logging",
+        "parent": "root",
+        "children": [
+            "detailed_logging"
+        ],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": true
+    },
+    {
+        "name": "detailed_logging",
+        "parent": "logging",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": true
+    },
+    {
+        "name": "no_write_delay",
+        "parent": "root",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": true
+    },
+    {
+        "name": "small_log",
+        "parent": "root",
+        "children": [],
+        "impliedOptions": [],
+        "excludedOptions": [],
+        "isOptional": true
+    }
+]
+

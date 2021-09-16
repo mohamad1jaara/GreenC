@@ -1,0 +1,29 @@
+{
+    "activatedOptions": [
+        "root",
+        "transaction_control",
+        "txc_mvlocks",
+        "table_type"
+    ],
+    "isValid": false,
+    "alternativeConfiguration": {
+        "activatedOptions": [
+            "root",
+            "transaction_control",
+            "txc_mvlocks",
+            "table_type",
+            "memory_tables"
+        ],
+        "isValid": true,
+        "estimation": {
+            "systemValues": {
+                "cpu": 1.050574859274822993,
+                "energy": 13.88643204194815,
+                "time": 251.051396889066943495
+            },
+            "partValues": []
+        }
+    },
+    "estimation": null
+}
+

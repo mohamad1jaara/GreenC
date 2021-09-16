@@ -1,0 +1,99 @@
+{
+    "activatedBinaryOptions": [
+        "root",
+        "CompressionMethod",
+        "LZMA"
+    ],
+    "numericOptionValues": {
+        "Files": 0,
+        "BlockSize": 1,
+        "x": 1
+    },
+    "isValid": true,
+    "estimation": {
+        "systemValues": {
+            "cpu_load_fixed": 33.5567478,
+            "cpu_load_bm": 33.70065564,
+            "energy_consumption_fixed": 9735.548722,
+            "energy_consumption_bm": 1777.609505,
+            "compression_size": 53838476,
+            "run_time": 51757.68108
+        },
+        "partValues": [
+            {
+                "options": [
+                    "root"
+                ],
+                "values": {
+                    "cpu_load_fixed": 33.46040681,
+                    "cpu_load_bm": 33.70065564,
+                    "energy_consumption_fixed": 9712.593174,
+                    "energy_consumption_bm": 1720.834627,
+                    "compression_size": 54402456,
+                    "run_time": 50403.29229
+                }
+            },
+            {
+                "options": [
+                    "BlockSize",
+                    "x"
+                ],
+                "values": {
+                    "cpu_load_fixed": 0.06399148712,
+                    "cpu_load_bm": 0,
+                    "energy_consumption_fixed": 15.32930143,
+                    "energy_consumption_bm": 38.10265892,
+                    "compression_size": -99154,
+                    "run_time": 904.0975922
+                }
+            },
+            {
+                "options": [
+                    "CompressionMethod",
+                    "BlockSize",
+                    "x"
+                ],
+                "values": {
+                    "cpu_load_fixed": 0.03234950087,
+                    "cpu_load_bm": 0,
+                    "energy_consumption_fixed": 7.626246869,
+                    "energy_consumption_bm": 18.672219,
+                    "compression_size": -22643,
+                    "run_time": 450.2912016
+                }
+            },
+            {
+                "options": [
+                    "LZMA",
+                    "BlockSize",
+                    "x"
+                ],
+                "values": {
+                    "cpu_load_fixed": 0,
+                    "cpu_load_bm": 0,
+                    "energy_consumption_fixed": 0,
+                    "energy_consumption_bm": 0,
+                    "compression_size": -344607,
+                    "run_time": 0
+                }
+            },
+            {
+                "options": [
+                    "CompressionMethod",
+                    "LZMA",
+                    "BlockSize",
+                    "x"
+                ],
+                "values": {
+                    "cpu_load_fixed": 0,
+                    "cpu_load_bm": 0,
+                    "energy_consumption_fixed": 0,
+                    "energy_consumption_bm": 0,
+                    "compression_size": -97576,
+                    "run_time": 0
+                }
+            }
+        ]
+    },
+    "alternativeConfiguration": null
+}

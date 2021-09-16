@@ -1,0 +1,87 @@
+{
+    "activatedBinaryOptions": [
+        "root",
+        "transaction_control",
+        "txc_mvlocks",
+        "table_type"
+    ],
+    "numericOptionValues": {},
+    "isValid": false,
+    "estimation": null,
+    "alternativeConfiguration": {
+        "activatedBinaryOptions": [
+            "root",
+            "transaction_control",
+            "txc_mvlocks",
+            "table_type",
+            "memory_tables"
+        ],
+        "numericOptionValues": {},
+        "isValid": true,
+        "estimation": {
+            "systemValues": {
+                "cpu": 1.050574859274822993,
+                "energy": 13.88643204194815,
+                "time": 251.051396889066943495
+            },
+            "partValues": [
+                {
+                    "options": [
+                        "root"
+                    ],
+                    "values": {
+                        "cpu": 1.8143897622051424,
+                        "energy": 13.88643204194815,
+                        "time": 262.7674294695168
+                    }
+                },
+                {
+                    "options": [
+                        "memory_tables"
+                    ],
+                    "values": {
+                        "cpu": -0.3121676823715776,
+                        "energy": 0.0,
+                        "time": -0.9903571507557679
+                    }
+                },
+                {
+                    "options": [
+                        "transaction_control",
+                        "memory_tables"
+                    ],
+                    "values": {
+                        "cpu": -0.4319069533733614,
+                        "energy": 0.0,
+                        "time": -10.369662742680342
+                    }
+                },
+                {
+                    "options": [
+                        "table_type",
+                        "memory_tables"
+                    ],
+                    "values": {
+                        "cpu": -0.000398451085067943,
+                        "energy": 0.0,
+                        "time": -0.007934998692149975
+                    }
+                },
+                {
+                    "options": [
+                        "transaction_control",
+                        "table_type",
+                        "memory_tables"
+                    ],
+                    "values": {
+                        "cpu": -0.019341816100312464,
+                        "energy": 0.0,
+                        "time": -0.34807768832159663
+                    }
+                }
+            ]
+        },
+        "alternativeConfiguration": null
+    }
+}
+

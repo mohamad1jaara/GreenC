@@ -1,0 +1,398 @@
+[
+    {
+        "name": "HSQLDB",
+        "binaryOptions": [
+            {
+                "name": "root",
+                "parent": null,
+                "children": [
+                    "compressed_script",
+                    "encryption",
+                    "transaction_control",
+                    "table_type",
+                    "logging",
+                    "no_write_delay",
+                    "small_log"
+                ],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": false
+            },
+            {
+                "name": "compressed_script",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            },
+            {
+                "name": "encryption",
+                "parent": "root",
+                "children": [
+                    "crypt_aes",
+                    "crypt_blowfish"
+                ],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            },
+            {
+                "name": "crypt_aes",
+                "parent": "encryption",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "crypt_blowfish"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "crypt_blowfish",
+                "parent": "encryption",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "crypt_aes"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "transaction_control",
+                "parent": "root",
+                "children": [
+                    "txc_mvlocks",
+                    "txc_mvcc",
+                    "txc_locks"
+                ],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": false
+            },
+            {
+                "name": "txc_mvlocks",
+                "parent": "transaction_control",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "txc_locks",
+                    "txc_mvcc"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "txc_mvcc",
+                "parent": "transaction_control",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "txc_locks",
+                    "txc_mvlocks"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "txc_locks",
+                "parent": "transaction_control",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "txc_mvcc",
+                    "txc_mvlocks"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "table_type",
+                "parent": "root",
+                "children": [
+                    "memory_tables",
+                    "cached_tables"
+                ],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": false
+            },
+            {
+                "name": "memory_tables",
+                "parent": "table_type",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "cached_tables"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "cached_tables",
+                "parent": "table_type",
+                "children": [
+                    "small_cache",
+                    "large_cache"
+                ],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "memory_tables"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "small_cache",
+                "parent": "cached_tables",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "large_cache"
+                ],
+                "isOptional": true
+            },
+            {
+                "name": "large_cache",
+                "parent": "cached_tables",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "small_cache"
+                ],
+                "isOptional": true
+            },
+            {
+                "name": "logging",
+                "parent": "root",
+                "children": [
+                    "detailed_logging"
+                ],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            },
+            {
+                "name": "detailed_logging",
+                "parent": "logging",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            },
+            {
+                "name": "no_write_delay",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            },
+            {
+                "name": "small_log",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            }
+        ],
+        "numericOptions": [],
+        "properties": [
+            {
+                "name": "energy",
+                "unit": "Wh"
+            },
+            {
+                "name": "time",
+                "unit": "sec"
+            },
+            {
+                "name": "cpu",
+                "unit": "%"
+            }
+        ]
+    },
+    {
+        "name": "7-Zip",
+        "binaryOptions": [
+            {
+                "name": "root",
+                "parent": null,
+                "children": [
+                    "filterOff",
+                    "HeaderCompressionOff",
+                    "mtOff",
+                    "CompressionMethod",
+                    "tmOff"
+                ],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": false
+            },
+            {
+                "name": "filterOff",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            },
+            {
+                "name": "HeaderCompressionOff",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            },
+            {
+                "name": "mtOff",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            },
+            {
+                "name": "CompressionMethod",
+                "parent": "root",
+                "children": [
+                    "LZMA",
+                    "LZMA2",
+                    "PPMd",
+                    "BZip2",
+                    "Deflate"
+                ],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": false
+            },
+            {
+                "name": "LZMA",
+                "parent": "CompressionMethod",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "LZMA2",
+                    "PPMd",
+                    "BZip2",
+                    "Deflate"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "LZMA2",
+                "parent": "CompressionMethod",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "LZMA",
+                    "PPMd",
+                    "BZip2",
+                    "Deflate"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "PPMd",
+                "parent": "CompressionMethod",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "LZMA",
+                    "LZMA2",
+                    "BZip2",
+                    "Deflate"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "BZip2",
+                "parent": "CompressionMethod",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "LZMA",
+                    "LZMA2",
+                    "PPMd",
+                    "Deflate"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "Deflate",
+                "parent": "CompressionMethod",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [
+                    "LZMA",
+                    "LZMA2",
+                    "PPMd",
+                    "BZip2"
+                ],
+                "isOptional": false
+            },
+            {
+                "name": "tmOff",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "isOptional": true
+            }
+        ],
+        "numericOptions": [
+            {
+                "name": "Files",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "minValue": 0,
+                "maxValue": 100,
+                "stepFunction": "Files + 10"
+            },
+            {
+                "name": "BlockSize",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "minValue": 1,
+                "maxValue": 4096,
+                "stepFunction": "BlockSize * 2"
+            },
+            {
+                "name": "x",
+                "parent": "root",
+                "children": [],
+                "impliedOptions": [],
+                "excludedOptions": [],
+                "minValue": 0,
+                "maxValue": 10,
+                "stepFunction": "x + 2"
+            }
+        ],
+        "properties": [
+            {
+                "name": "cpu_load_fixed",
+                "unit": "%"
+            },
+            {
+                "name": "cpu_load_bm",
+                "unit": "%"
+            },
+            {
+                "name": "energy_consumption_fixed",
+                "unit": "Ws"
+            },
+            {
+                "name": "energy_consumption_bm",
+                "unit": "Ws"
+            },
+            {
+                "name": "compression_size",
+                "unit": "B"
+            },
+            {
+                "name": "run_time",
+                "unit": "s"
+            }
+        ]
+    }
+]
